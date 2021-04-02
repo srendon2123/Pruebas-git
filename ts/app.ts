@@ -1,7 +1,34 @@
-const agenda = [];
+const agenda: Array<Persona> = [];
 
-const aniadirUsuario = (contacto: Persona): boolean => 
+const crearContacto = (): Persona | undefined => 
 {
-   let aniadido: boolean = false;
-   return aniadido;
+   let persona: Persona | undefined;
+
+   return persona;
+};
+
+const eliminarContacto = (): boolean => 
+{
+   let isDelete: boolean = false;
+
+   return isDelete;
+};
+
+const actualizarContacto = (): boolean =>
+{
+   let isUpdate: boolean = false;
+
+   return isUpdate;
+};
+
+const obtenerInformacionContacto = (): boolean =>
+{
+   let canGetInfo = false;
+
+   return canGetInfo;
+};
+
+const actualizarInterfaz = (): void => 
+{
+   
 };
