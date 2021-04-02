@@ -1,5 +1,9 @@
 class Persona
 {
+   private static idContactoSiguiente = 0;
+
+   private _id: number;
+
    private _nombre: string;
 
    private _email: string;
@@ -12,6 +16,12 @@ class Persona
    {
       this._nombre = nombre;
       this._email = email;
+      this._id = ++Persona.idContactoSiguiente;
+   }
+
+   get id(): number
+   {
+      return this._id;
    }
 
    get nombre(): string
@@ -19,7 +29,7 @@ class Persona
       return this._nombre;
    }
 
-   set nombre(nombre)
+   set nombre(nombre: string)
    {
       this._nombre = nombre;
    }
