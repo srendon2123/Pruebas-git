@@ -28,3 +28,15 @@ table
    border: 2px solid red;
    margin: 0 auto;
 }
+
+.form-group
+{
+   padding: 0em 0.2em;
+   display: block;
+}
+
+fieldset
+{
+   display: flex;
+   justify-content: space-evenly;
+}
