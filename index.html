@@ -5,9 +5,56 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
-   <title>Listado de Personas</title>
+   <title>Agenda de contactos</title>
+   <script src="./js/Persona.js"></script>
 </head>
 <body>
    
+   <header>
+      <h1>Agenda de Contactos</h1>
+   </header>
+
+   <main>
+      <header>
+         <h2>Acciones para realizar</h2>
+      </header>
+      <form method="get" action="return false">
+         <fieldset>
+            <legend>Informacion del contacto</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+         </fieldset>
+      </form>
+
+      <table>
+         <caption>Listado de contactos</caption>
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Nombre</th>
+               <th>Email</th>
+               <th>Numero</th>
+               <th>Descripcion</th>
+            </tr>
+         </thead>
+         <tbody id="tabla_contactos">
+            <tr>
+               <td>0</td>
+               <td>Sebastian</td>
+               <td>srendon2123@gmail.com</td>
+               <td>314-824-4134</td>
+               <td>Un muy agradable sujeto</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+               <td colspan="4">Total de Contactos:</td>
+               <td id="total_contactos">200</td>
+            </tr>
+         </tfoot>
+      </table>
+   </main>
+
+   <script src="./js/app.js"></script>
 </body>
 </html>

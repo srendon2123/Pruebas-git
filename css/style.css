@@ -12,7 +12,19 @@
    box-sizing: inherit;
 }
 
-body * + *
+td, th
 {
-   margin-top: 1.5em;
-} 
+   padding: 0.5em;
+   margin: 0.5em;
+   border: 2px solid black;
+   text-align: center;
+   min-width: 5em;
+   max-width: 25em;
+   word-wrap: break-word;
+}
+
+table
+{
+   border: 2px solid red;
+   margin: 0 auto;
+}
